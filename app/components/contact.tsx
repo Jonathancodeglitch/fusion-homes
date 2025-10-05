@@ -23,8 +23,8 @@ export function Contact() {
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty leading-relaxed">
             The sooner you contact us, the sooner we can help you find solutions
-            to your concerns. We will walk you through the approval process with
-            medical and financial consultations.
+            to your senior care needs. We will walk you through the approval
+            process with medical and financial consultations.
           </p>
         </div>
 
@@ -173,7 +173,7 @@ export function Contact() {
               <div className="space-y-1 text-xs text-foreground">
                 <p>Mon-Fri: 9am-5pm</p>
                 <h4 className="text-lg font-semibold text-foreground mb-2">
-                  Home visiting hours
+                  Home Visiting Hours
                 </h4>
                 <p>Sunday to Saturday: 8am to 8pm</p>
               </div>

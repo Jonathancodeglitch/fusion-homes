@@ -15,8 +15,8 @@ export default function Home() {
       <HomesShowcase />
       <Services />
       <About />
-      <Contact />
       <FAQSection />
+      <Contact />
       <Footer />
     </main>
   );

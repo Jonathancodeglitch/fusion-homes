@@ -18,11 +18,14 @@ export function About() {
                 residents transition into our homes for their physical,
                 emotional, and social needs.
               </p>
+              <h2 className="text-4xl font-bold text-foreground mb-6 text-balance">
+                We are here for you.
+              </h2>
               <p>
-                We are here for you. We strive to make the process of
-                transitioning your loved one into their new environment as
-                stress-free as possible. With our experienced and well-trained
-                staff, we will help you every step of the way.
+                We strive to make the process of transitioning your loved one
+                into their new environment as stress-free as possible. With our
+                experienced and well-trained staff, we will help you every step
+                of the way.
               </p>
               <p>
                 The Fusion team is committed to your family having peace of mind
@@ -34,12 +37,12 @@ export function About() {
 
           {/* Image */}
           <div className="relative">
-            <div className="aspect-[4/3] relative rounded-lg overflow-hidden bg-secondary/10">
+            <div className="aspect-[6/5] relative rounded-lg overflow-hidden bg-secondary/10 ">
               <Image
                 src="/family-photo.jpg"
                 alt="Fusion Senior Care Homes family owners with their pets"
                 fill
-                className="object-contain"
+                className="object-cover object-top sm:object-contain sm:object-center"
               />
             </div>
             {/* Decorative element */}

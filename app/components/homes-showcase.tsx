@@ -8,8 +8,7 @@ const homes = [
     name: "Fusion Senior Care Homes I",
     address: "512 N Bebe St, Wichita KS 67212",
     phone: "917-337-5703",
-    image:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-VjFLNvJfhLPjJX8JPvFgbISSQ3E7dd.png",
+    image: "/fusion_senior_care_homes_I.jpg",
     description:
       "Our original location providing trusted care with a warm, family-like atmosphere for over a decade.",
   },
@@ -17,8 +16,7 @@ const homes = [
     name: "Fusion Senior Care Home Plus II",
     address: "512 S Horseshoe Bend, Maize KS 67001",
     phone: "917-337-5703",
-    image:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-QTplh1uVoig2rY5JEqx7DpRYKZcZDH.png",
+    image: "/fusion_senior_care_homes_II.jpg",
     description:
       "Our Maize house located in the beautiful Carriage parkway neighborhood, providing seniors in the west Wichita area the quality personalized care.",
   },
@@ -38,7 +36,7 @@ const homes = [
     image:
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-RWG0HJBOAy5vIURBzmHqD2bf8E7VaZ.png",
     description:
-      "individualized, attentive to each resident's unique needs, care setting with dedicated staff providing to each resident's unique needs.",
+      "Individualized attentive to each resident's unique needs, care setting with dedicated staff providing to each resident's unique needs.",
   },
 ];
 
