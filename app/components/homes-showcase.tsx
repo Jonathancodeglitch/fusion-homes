@@ -36,7 +36,7 @@ const homes = [
     image:
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-RWG0HJBOAy5vIURBzmHqD2bf8E7VaZ.png",
     description:
-      "Individualized attentive to each resident's unique needs, care setting with dedicated staff providing to each resident's unique needs.",
+      "Individualized care setting with dedicated staff providing exceptional attention to each resident's unique needs.",
   },
 ];
 

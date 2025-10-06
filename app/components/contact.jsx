@@ -1,3 +1,5 @@
+"use client";
+import { useState, useEffect } from "react";
 import { Button } from "./ui/button";
 import { Card, CardContent } from "./ui/card";
 import { Input } from "./ui/input";
@@ -12,8 +14,67 @@ import {
 } from "./ui/select";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
 import Image from "next/image";
+import { useForm, Controller } from "react-hook-form";
 
 export function Contact() {
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    phone: "",
+    email: "",
+    inquiry: "",
+    message: "",
+  });
+
+  const [status, setStatus] = useState(null);
+  const {
+    register,
+    handleSubmit,
+    watch,
+    control,
+    formState: { errors },
+    reset,
+  } = useForm();
+
+  const onSubmit = async (data) => {
+    setStatus("loading");
+
+    try {
+      const res = await fetch(
+        "https://formsubmit.co/ajax/9c85a5da450722e6a0767c21463e3621",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          body: JSON.stringify({ formOrigin: "Contact Form", ...data }),
+        }
+      );
+
+      const responseData = await res.json();
+      if (responseData.success === "true") {
+        reset();
+        setStatus("success");
+      } else {
+        setStatus("error");
+      }
+    } catch (error) {
+      console.error(error);
+      setStatus("error");
+    }
+  };
+
+  // ✅ Hide success message after 3 seconds
+  useEffect(() => {
+    if (status) {
+      const timer = setTimeout(() => {
+        setStatus(false);
+      }, 3000);
+      return () => clearTimeout(timer);
+    }
+  }, [status]);
+
   return (
     <section id="contact" className="py-16 bg-background">
       <div className="container mx-auto px-4">
@@ -47,82 +108,176 @@ export function Contact() {
               <h3 className="text-2xl font-semibold text-foreground mb-6">
                 Get in Touch
               </h3>
-              <form className="space-y-6">
+              <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
                     <Label htmlFor="firstName">First Name *</Label>
                     <Input
+                      className="my-2"
+                      {...register("firstName", { required: true })}
                       id="firstName"
                       placeholder="Your first name"
-                      required
+                      aria-invalid={errors.firstName ? "true" : "false"}
                     />
+                    {errors.firstName?.type === "required" && (
+                      <p
+                        className="text-red-400 font-bold text-sm"
+                        role="alert"
+                      >
+                        First Name is required
+                      </p>
+                    )}
                   </div>
                   <div>
                     <Label htmlFor="lastName">Last Name *</Label>
                     <Input
+                      className="my-2"
+                      {...register("lastName", { required: true })}
                       id="lastName"
                       placeholder="Your last name"
-                      required
+                      aria-invalid={errors.lastName ? "true" : "false"}
                     />
+                    {errors.lastName?.type === "required" && (
+                      <p
+                        className="text-red-400 font-bold text-sm"
+                        role="alert"
+                      >
+                        Last Name is required
+                      </p>
+                    )}
                   </div>
                 </div>
 
                 <div>
                   <Label htmlFor="phone">Phone Number *</Label>
                   <Input
+                    className="my-2"
+                    {...register("phone", { required: true })}
                     id="phone"
                     type="tel"
                     placeholder="(316) 555-0123"
-                    required
+                    aria-invalid={errors.phone ? "true" : "false"}
                   />
+                  {errors.phone?.type === "required" && (
+                    <p className="text-red-400 font-bold text-sm" role="alert">
+                      Phone Number is required
+                    </p>
+                  )}
                 </div>
 
                 <div>
                   <Label htmlFor="email">Email Address *</Label>
                   <Input
+                    className="my-2"
+                    {...register("email", {
+                      required: "Email is required",
+                      pattern: {
+                        value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                        message: "Please enter a valid email address",
+                      },
+                    })}
                     id="email"
                     type="email"
                     placeholder="your.email@example.com"
-                    required
+                    aria-invalid={errors.email ? "true" : "false"}
                   />
+                  {errors.email && (
+                    <p className="text-red-400 font-bold text-sm" role="alert">
+                      {errors.email.message}
+                    </p>
+                  )}
                 </div>
 
                 <div>
                   <Label htmlFor="inquiry">What would you like to do?</Label>
-                  <Select>
-                    <SelectTrigger>
-                      <SelectValue placeholder="Select an option" />
-                    </SelectTrigger>
-                    <SelectContent>
-                      <SelectItem value="tour">Schedule a Home Tour</SelectItem>
-                      <SelectItem value="appointment">
-                        Book an Appointment
-                      </SelectItem>
-                      <SelectItem value="medicaid">
-                        Discuss Medicaid Assistance
-                      </SelectItem>
-                      <SelectItem value="other">Other</SelectItem>
-                    </SelectContent>
-                  </Select>
+                  <Controller
+                    name="inquiry"
+                    control={control}
+                    render={({ field }) => (
+                      <Select
+                        onValueChange={field.onChange}
+                        value={field.value}
+                      >
+                        <SelectTrigger>
+                          <SelectValue placeholder="Select an option" />
+                        </SelectTrigger>
+                        <SelectContent>
+                          <SelectItem value="tour">
+                            Schedule a Home Tour
+                          </SelectItem>
+                          <SelectItem value="appointment">
+                            Book an Appointment
+                          </SelectItem>
+                          <SelectItem value="medicaid">
+                            Discuss Medicaid Assistance
+                          </SelectItem>
+                          <SelectItem value="other">Other</SelectItem>
+                        </SelectContent>
+                      </Select>
+                    )}
+                  />
                 </div>
 
                 <div>
                   <Label htmlFor="message">Message *</Label>
                   <Textarea
+                    className="my-2"
+                    {...register("message", { required: true })}
                     id="message"
                     placeholder="Tell us about your needs and how we can help..."
                     rows={3}
-                    required
+                    aria-invalid={errors.message ? "true" : "false"}
                   />
+                  {errors.message?.type === "required" && (
+                    <p className="text-red-400 font-bold text-sm" role="alert">
+                      Message is required
+                    </p>
+                  )}
                 </div>
 
                 <Button
                   type="submit"
                   size="lg"
-                  className="w-full bg-primary text-primary-foreground hover:bg-primary/90"
+                  className="cursor-pointer  w-full bg-primary text-primary-foreground hover:bg-primary/90"
                 >
-                  Send Message
+                  {status === "loading" ? (
+                    <>
+                      <svg
+                        className="animate-spin h-5 w-5 text-white"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                      >
+                        <circle
+                          className="opacity-25"
+                          cx="12"
+                          cy="12"
+                          r="10"
+                          stroke="currentColor"
+                          strokeWidth="4"
+                        ></circle>
+                        <path
+                          className="opacity-75"
+                          fill="currentColor"
+                          d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"
+                        ></path>
+                      </svg>
+                      <span>Sending...</span>
+                    </>
+                  ) : (
+                    "Send Message"
+                  )}
                 </Button>
+                {status === "success" && (
+                  <p className="text-green-600 text-center">
+                    Message sent successfully!
+                  </p>
+                )}
+                {status === "error" && (
+                  <p className="text-red-600 text-center">
+                    Something went wrong. Try again.
+                  </p>
+                )}
               </form>
             </CardContent>
           </Card>

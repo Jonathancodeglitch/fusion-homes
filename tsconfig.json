@@ -26,6 +26,6 @@
       "@/*": ["./app/*"]
     }
   },
-  "include": ["next-env.d.ts", ".next/types/**/*.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", ".next/types/**/*.ts", "**/*.ts", "**/*.tsx", "app/components/contact.jsx"],
   "exclude": ["node_modules"]
 }
