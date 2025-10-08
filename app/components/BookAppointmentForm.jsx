@@ -28,7 +28,7 @@ export default function BookAppointmentForm() {
 
     try {
       const res = await fetch(
-        "https://formsubmit.co/ajax/9c85a5da450722e6a0767c21463e3621",
+        "https://formsubmit.co/ajax/fusionseniorcarehome@gmail.com",
         {
           method: "POST",
           headers: {
@@ -193,7 +193,7 @@ export default function BookAppointmentForm() {
               Message sent successfully!
             </p>
           )}
-          
+
           {status === "error" && (
             <p className="text-red-600 text-center">
               Something went wrong. Try again.
