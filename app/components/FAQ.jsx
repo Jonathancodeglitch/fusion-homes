@@ -13,7 +13,7 @@ export default function FAQSection() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-foreground mb-4 text-balance">
-            ❓ Frequently Asked Questions
+            Frequently Asked Questions
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty leading-relaxed">
             Find quick answers to the most common questions about our services,

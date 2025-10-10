@@ -41,7 +41,7 @@ export function Contact() {
 
     try {
       const res = await fetch(
-        "https://formsubmit.co/ajax/fusionseniorcarehome@gmail.com",
+        "https://formsubmit.co/ajax/tmitzel.fusion@gmail.com",
         {
           method: "POST",
           headers: {
@@ -295,7 +295,13 @@ export function Contact() {
               <p className="text-sm text-muted-foreground mb-3">
                 Ready to help you today
               </p>
-              <p className="text-xl font-bold text-primary">917-337-5703</p>
+              <a
+                target="_blank"
+                href="tel:+13166198837"
+                className="text-xl font-bold text-primary"
+              >
+                +1 (316) 619-8837
+              </a>
             </CardContent>
           </Card>
 
@@ -310,9 +316,14 @@ export function Contact() {
               <p className="text-sm text-muted-foreground mb-3">
                 We'll respond within 24 hours
               </p>
-              <p className="text-sm text-foreground">
-                fusionseniorcarehome@gmail.com
-              </p>
+              <a
+                rel="noopener noreferrer"
+                target="_blank"
+                href="mailto:tmitzel.fusion@gmail.com"
+                className="text-sm text-foreground"
+              >
+                tmitzel.fusion@gmail.com
+              </a>
             </CardContent>
           </Card>
 

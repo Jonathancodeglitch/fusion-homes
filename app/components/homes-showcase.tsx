@@ -7,7 +7,7 @@ const homes = [
   {
     name: "Fusion Senior Care Homes I",
     address: "512 N Bebe St, Wichita KS 67212",
-    phone: "917-337-5703",
+    phone: "+1(316) 619-8837",
     image: "/fusion_senior_care_homes_I.jpg",
     description:
       "Our original location providing trusted care with a warm, family-like atmosphere for over a decade.",
@@ -15,7 +15,7 @@ const homes = [
   {
     name: "Fusion Senior Care Home Plus II",
     address: "512 S Horseshoe Bend, Maize KS 67001",
-    phone: "917-337-5703",
+    phone: "+1(316) 619-8837",
     image: "/fusion_senior_care_homes_II.jpg",
     description:
       "Our Maize house located in the beautiful Carriage parkway neighborhood, providing seniors in the west Wichita area the quality personalized care.",
@@ -23,7 +23,7 @@ const homes = [
   {
     name: "Fusion Senior Care Home at Mallard",
     address: "12046 W 33rd St N, Wichita KS 67221",
-    phone: "917-337-5703",
+    phone: "+1(316) 619-8837",
     image:
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-hkSajEWoJ1KE5VgGWuJAYWvmfqeieS.png",
     description:
@@ -32,7 +32,7 @@ const homes = [
   {
     name: "Precious Gems At Polo Dr",
     address: "5502 E Polo Dr, Wichita KS 67217",
-    phone: "917-337-5703",
+    phone: "+1(316) 619-8837",
     image:
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-RWG0HJBOAy5vIURBzmHqD2bf8E7VaZ.png",
     description:
@@ -79,7 +79,13 @@ export function HomesShowcase() {
                 </div>
                 <div className="flex items-start gap-2 mb-4">
                   <Phone className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <p className="text-muted-foreground">{home.phone}</p>
+                  <a
+                    target="_blank"
+                    href="tel:+13166198837"
+                    className="text-muted-foreground"
+                  >
+                    {home.phone}
+                  </a>
                 </div>
                 <p className="text-foreground mb-6 leading-relaxed">
                   {home.description}

@@ -1,5 +1,8 @@
 import Image from "next/image";
 import { Phone, Mail } from "lucide-react";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import Link from "next/link";
 
 export function Footer() {
   return (
@@ -23,13 +26,39 @@ export function Footer() {
             <div className="space-y-2">
               <div className="flex items-center gap-2">
                 <Phone className="h-4 w-4" />
-                <span>917-337-5703</span>
+                <a target="_blank" href="tel:+13166198837">
+                  +1 (316) 619-8837
+                </a>
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="h-4 w-4" />
-                <span>fusionseniorcarehome@gmail.com</span>
+                <a
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  href="mailto:tmitzel.fusion@gmail.com"
+                >
+                  tmitzel.fusion@gmail.com
+                </a>
               </div>
             </div>
+            <ul className="flex items-center gap-3 mt-3">
+              <li>
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/fusionseniorcarehomes?igsh=cHQwb2JubW5lZ20w"
+                >
+                  <InstagramIcon />
+                </a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://www.facebook.com/share/1HNkCcr86H/"
+                >
+                  <FacebookIcon />
+                </a>
+              </li>
+            </ul>
           </div>
 
           {/* Our Locations */}
