@@ -7,6 +7,7 @@ const homes = [
   {
     name: "Fusion Senior Care Homes I",
     address: "512 N Bebe St, Wichita KS 67212",
+    map: "https://maps.app.goo.gl/G5RJ6inWjDtvNywa7",
     phone: "+1(316) 619-8837",
     image: "/fusion_senior_care_homes_I.jpg",
     description:
@@ -15,6 +16,7 @@ const homes = [
   {
     name: "Fusion Senior Care Home Plus II",
     address: "512 S Horseshoe Bend, Maize KS 67001",
+    map: "https://maps.app.goo.gl/apktrDpvjUr5QHe97",
     phone: "+1(316) 619-8837",
     image: "/fusion_senior_care_homes_II.jpg",
     description:
@@ -23,6 +25,7 @@ const homes = [
   {
     name: "Fusion Senior Care Home at Mallard",
     address: "12046 W 33rd St N, Wichita KS 67221",
+    map: "https://maps.app.goo.gl/jbASsfNWQU8NphPTA",
     phone: "+1(316) 619-8837",
     image:
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-hkSajEWoJ1KE5VgGWuJAYWvmfqeieS.png",
@@ -32,6 +35,7 @@ const homes = [
   {
     name: "Precious Gems At Polo Dr",
     address: "5502 E Polo Dr, Wichita KS 67217",
+    map: "https://maps.app.goo.gl/pPPDmrL3rDHaF37v6",
     phone: "+1(316) 619-8837",
     image:
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-RWG0HJBOAy5vIURBzmHqD2bf8E7VaZ.png",
@@ -75,7 +79,13 @@ export function HomesShowcase() {
                 </h3>
                 <div className="flex items-start gap-2 mb-4">
                   <MapPin className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                  <p className="text-muted-foreground">{home.address}</p>
+                  <a
+                    href={home.map}
+                    target="_blank"
+                    className="text-muted-foreground"
+                  >
+                    {home.address}
+                  </a>
                 </div>
                 <div className="flex items-start gap-2 mb-4">
                   <Phone className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />

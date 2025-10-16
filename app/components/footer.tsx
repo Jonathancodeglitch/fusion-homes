@@ -69,13 +69,17 @@ export function Footer() {
                 <p className="font-medium text-background">
                   Fusion Senior Care Homes I
                 </p>
-                <p>512 N Bebe St, Wichita KS 67212</p>
+                <a href="https://maps.app.goo.gl/G5RJ6inWjDtvNywa7">
+                  512 N Bebe St, Wichita KS 67212
+                </a>
               </div>
               <div>
                 <p className="font-medium text-background">
                   Fusion Senior Care Home at Mallard
                 </p>
-                <p>12046 W 33rd St N, Wichita KS 67221</p>
+                <a href="https://maps.app.goo.gl/jbASsfNWQU8NphPTA">
+                  12046 W 33rd St N, Wichita KS 67221
+                </a>
               </div>
             </div>
           </div>
@@ -88,14 +92,18 @@ export function Footer() {
                 <p className="font-medium text-background">
                   Fusion Senior Care Home Plus II
                 </p>
-                <p>512 S Horseshoe Bend, Maize KS 67001</p>
+                <a href="https://maps.app.goo.gl/apktrDpvjUr5QHe97">
+                  512 S Horseshoe Bend, Maize KS 67001
+                </a>
               </div>
 
               <div>
                 <p className="font-medium text-background">
                   Precious Gems At Polo Dr
                 </p>
-                <p>5502 E Polo Dr, Wichita KS 67217</p>
+                <a href="https://maps.app.goo.gl/pPPDmrL3rDHaF37v6">
+                  5502 E Polo Dr, Wichita KS 67217
+                </a>
               </div>
             </div>
           </div>

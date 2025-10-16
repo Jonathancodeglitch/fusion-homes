@@ -91,16 +91,20 @@ export function Contact() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-12">
           {/* Image on the left */}
-          <div className="relative">
+          <a
+            target="_blank"
+            href="https://www.google.com/maps/d/u/0/viewer?mid=1kvN9OPJdE2EcBhNd108bk04pW7icm9s&ll=37.717018804396204%2C-97.42439515&z=10"
+            className="relative cursor-pointer"
+          >
             <Image
-              src="/birthday-celebration.jpeg"
+              src="/map.png"
               alt="Resident celebrating with joy at our care home - wearing party hat and novelty glasses"
               width={600}
               height={600}
               className="w-full h-[600px] object-cover object-center rounded-lg shadow-lg"
             />
             <div className="absolute inset-0 bg-primary/10 rounded-lg"></div>
-          </div>
+          </a>
 
           {/* Get in Touch form as square grid on the right */}
           <Card className="h-fit">
