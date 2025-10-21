@@ -9,8 +9,14 @@ export function Services() {
             Committed to Quality Care
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty leading-relaxed">
-            You can expect the best care for your loved one at Fusion Senior
-            Care Homes.
+            Our staff are dedicated to providing compassionate care backed by
+            professional medical support. We strive to maintain an environment
+            in which resident rights and dignity are upheld.
+          </p>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty leading-relaxed">
+            With specially equipped homes, dedicated care experts, and a focus
+            on resident quality of life, we are committed to high-quality care
+            for seniors needing assistance with activities of daily living.
           </p>
         </div>
 
@@ -25,27 +31,41 @@ export function Services() {
           </div>
           <div className="space-y-6">
             <h3 className="text-3xl font-bold text-foreground text-balance">
-              24/7 Compassionate Care
+              Our Fusion Senior Care Promise
             </h3>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Our certified Nursing Assistants and Medication Aids are on site
-              around the clock, with registered nurses on call 24/7. We provide
-              specialized care for residents with dementia, memory issues, and
-              other progressive medical conditions, ensuring your loved ones
-              receive the attention they deserve.
+              Understanding the difficulties and challenges of finding reliable
+              care for your love one, We at Fusion Senior Care promise to:
             </p>
             <ul className="space-y-3 text-muted-foreground">
               <li className="flex items-start gap-3">
                 <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                <span>Certified nursing staff available 24/7</span>
+                <span>
+                  Treat our residents with the kind of care we would want to
+                  receive ourselves
+                </span>
               </li>
               <li className="flex items-start gap-3">
                 <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                <span>Specialized memory and dementia care</span>
+                <span>Work with you to navigate the senior care process</span>
               </li>
               <li className="flex items-start gap-3">
                 <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                <span>Medication management and monitoring</span>
+                <span>
+                  Treat our residents and their families’ like our own family
+                </span>
+              </li>
+              <li className="flex items-start gap-3">
+                <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                <span>Ensure that our residents quality care</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                <span>Respect and uphold each residents’ individuality</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                <span>Ensure a clean and organized environment</span>
               </li>
             </ul>
           </div>
@@ -54,34 +74,64 @@ export function Services() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6 lg:order-1">
             <h3 className="text-3xl font-bold text-foreground text-balance">
-              Home-Like Environment & Medical Services
+              Providing Quality Care
             </h3>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              We believe in creating a true home environment with all the
-              medical and activity of daily living support your loved ones need.
-              From home-cooked meals and housekeeping to on-site medical
-              services including podiatry, labs, and x-rays, we handle
-              everything so families can focus on what matters most - spending
-              quality time together.
+              Our commitment to quality care means that you can expect the best
+              individualized care for your loved one. In upholding our
+              commitment, we provide the following services:
             </p>
             <ul className="space-y-3 text-muted-foreground">
               <li className="flex items-start gap-3">
                 <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                <span>Home-cooked meals and laundry services</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                <span>On-site medical services and house calls</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                <span>Personalized care plans for each resident</span>
+                <span>Care experts: Full Time LPN supported by a RN</span>
               </li>
               <li className="flex items-start gap-3">
                 <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
                 <span>
-                  Activities: games, movie nights, gardening, cocktails
-                  evenings, etc
+                  Care specialists: Certified Nursing Assistant and Medication
+                  Aid on sites 24/7
+                </span>
+              </li>
+              <li className="flex items-start gap-3">
+                <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                <span>
+                  Doctor Visits: Monthly physician house calls for all residents
+                </span>
+              </li>
+              <li className="flex items-start gap-3">
+                <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                <span>
+                  Home Environment: Home cooked meals, laundry, cleaning
+                  services, personalized activity schedules, and more!
+                </span>
+              </li>
+              <li className="flex items-start gap-3">
+                <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                <span>
+                  Outings: Optional shopping trips, museum excursions and many
+                  more!
+                </span>
+              </li>
+              <li className="flex items-start gap-3">
+                <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                <span>
+                  Appointment Assistance: Accompanying residents to doctors
+                  appointments as needed
+                </span>
+              </li>
+              <li className="flex items-start gap-3">
+                <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                <span>
+                  Amenities: house phones, free cable TV, back yard patios,
+                  walking paths, and many more!
+                </span>
+              </li>
+              <li className="flex items-start gap-3">
+                <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                <span>
+                  Administrative assistance with navigating Medicaid and
+                  Medicare coverage
                 </span>
               </li>
             </ul>

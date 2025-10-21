@@ -83,9 +83,9 @@ export function Contact() {
             Contact Fusion Senior Care Homes
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty leading-relaxed">
-            The sooner you contact us, the sooner we can help you find solutions
-            to your senior care needs. We will walk you through the approval
-            process with medical and financial consultations.
+            We are here to answer all your questions and concerns about senior
+            care. Call us at 316-619-8837 or complete one of our contact forms
+            to start a senior care conversation.
           </p>
         </div>
 

@@ -22,8 +22,10 @@ export function Hero() {
           QUALITY SENIOR CARE FOR YOUR LOVED ONES
         </h1>
         <p className="text-xl md:text-2xl mb-8 text-pretty leading-relaxed">
-          We provide safe and welcoming homes where seniors live with dignity,
-          joy, and support. Your peace of mind starts here.
+          Fusion Senior Care Home Plus provides long term and respite care for
+          seniors and people with physical disabilities in Wichita, Kansas. Our
+          home-like settings and optimal staff-to-resident ratio makes it
+          possible for us to provide quality, individualized care.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button

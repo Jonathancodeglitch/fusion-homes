@@ -13,24 +13,29 @@ export function About() {
             </h2>
             <div className="space-y-6 text-foreground leading-relaxed">
               <p className="text-lg">
-                Fusion Senior Care Homes is a family-owned business serving
-                Kansas communities. We have years of experience helping
-                residents transition into our homes for their physical,
-                emotional, and social needs.
+                Fusion Senior Care Home Plus is based in Wichita, Kansas. We are
+                a family-owned company established in 2016. Owner/operator
+                Syreeta Chenneh-Dweh was inspired to open our first home by the
+                compassionate, resourceful nurse who cared for her dying mother.
+                Through sacrifice and excellence, our first two residents
+                experienced improvement in their quality of life. As the word
+                spread, the founders soon had a full house and eventually a
+                waiting list.
               </p>
-              <h2 className="text-4xl font-bold text-foreground mb-6 text-balance">
-                We are here for you.
-              </h2>
+
               <p>
-                We strive to make the process of transitioning your loved one
-                into their new environment as stress-free as possible. With our
-                experienced and well-trained staff, we will help you every step
-                of the way.
+                Starting from that first home at 512 N. Bebe, we now have a
+                portfolio of 4 home plus locations. We plan to open more homes
+                to serve Wichita’s growing senior population.
               </p>
               <p>
-                The Fusion team is committed to your family having peace of mind
-                while in our care. At Fusion Senior Care Homes, your family is
-                our family.
+                Wichita families have trusted us to care for their loved ones
+                for almost a decade because of our unwavering commitment to
+                quality care and our wealth of experience.
+              </p>
+              <p>
+                If you are looking for assisted living within the comfort of a
+                home, we are here to help you.{" "}
               </p>
             </div>
           </div>
