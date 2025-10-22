@@ -9,7 +9,7 @@ export function About() {
           {/* Text Content */}
           <div>
             <h2 className="text-4xl font-bold text-foreground mb-6 text-balance">
-              Our Family History
+              History of Our Homes
             </h2>
             <div className="space-y-6 text-foreground leading-relaxed">
               <p className="text-lg">

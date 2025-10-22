@@ -19,7 +19,7 @@ export function Hero() {
       {/* Content */}
       <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
         <h1 className="text-5xl md:text-6xl font-bold mb-6 text-balance">
-          QUALITY SENIOR CARE FOR YOUR LOVED ONES
+          WICHITA’S BEST VALUE IN QUALITY SENIOR CARE
         </h1>
         <p className="text-xl md:text-2xl mb-8 text-pretty leading-relaxed">
           Fusion Senior Care Home Plus provides long term and respite care for
