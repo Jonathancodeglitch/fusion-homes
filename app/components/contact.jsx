@@ -84,7 +84,7 @@ export function Contact() {
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty leading-relaxed">
             We are here to answer all your questions and concerns about senior
-            care. Call us at 316-619-8837 or complete one of our contact forms
+            care. Call us at +1 (917) 773-5703 or complete one of our contact forms
             to start a senior care conversation.
           </p>
         </div>
@@ -301,10 +301,10 @@ export function Contact() {
               </p>
               <a
                 target="_blank"
-                href="tel:+13166198837"
+                href="tel:+19177735703"
                 className="text-xl font-bold text-primary"
               >
-                +1 (316) 619-8837
+                 +1 (917) 773-5703
               </a>
             </CardContent>
           </Card>

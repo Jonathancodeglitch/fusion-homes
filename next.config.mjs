@@ -4,7 +4,7 @@ const nextConfig = {
   reactStrictMode: true,
   distDir: "dist",
   trailingSlash: true,
-  assetPrefix: ".",
+  assetPrefix: "/",
   experimental: {
     optimizePackageImports: ["@chakra-ui/react"],
   },

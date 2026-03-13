@@ -26,8 +26,8 @@ export function Footer() {
             <div className="space-y-2">
               <div className="flex items-center gap-2">
                 <Phone className="h-4 w-4" />
-                <a target="_blank" href="tel:+13166198837">
-                  +1 (316) 619-8837
+                <a target="_blank" href="tel:+19177735703">
+                  +1 (917) 773-5703
                 </a>
               </div>
               <div className="flex items-center gap-2">
@@ -111,8 +111,8 @@ export function Footer() {
 
         <div className="border-t border-background/20 mt-8 pt-8 text-center text-sm text-background/60">
           <p>
-            &copy; 2024 Fusion Senior Care Homes. All rights reserved. |
-            Licensed Senior Care Provider in Kansas
+            &copy; {new Date().getFullYear()} Fusion Senior Care Homes. All
+            rights reserved. | Licensed Senior Care Provider in Kansas
           </p>
         </div>
       </div>
