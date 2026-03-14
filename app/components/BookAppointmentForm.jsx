@@ -28,7 +28,7 @@ export default function BookAppointmentForm() {
 
     try {
       const res = await fetch(
-        "https://formsubmit.co/ajax/fusionseniorcarehome@gmail.com",
+        "https://formsubmit.co/ajax/Sabahdc@fusion-hp.com",
         {
           method: "POST",
           headers: {

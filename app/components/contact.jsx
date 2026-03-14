@@ -41,7 +41,7 @@ export function Contact() {
 
     try {
       const res = await fetch(
-        "https://formsubmit.co/ajax/tmitzel.fusion@gmail.com",
+        "https://formsubmit.co/ajax/Sabahdc@fusion-hp.com",
         {
           method: "POST",
           headers: {
@@ -323,10 +323,10 @@ export function Contact() {
               <a
                 rel="noopener noreferrer"
                 target="_blank"
-                href="mailto:tmitzel.fusion@gmail.com"
+                href="mailto:Sabahdc@fusion-hp.com"
                 className="text-sm text-foreground"
               >
-                tmitzel.fusion@gmail.com
+                Sabahdc@fusion-hp.com
               </a>
             </CardContent>
           </Card>

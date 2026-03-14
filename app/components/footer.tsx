@@ -35,9 +35,9 @@ export function Footer() {
                 <a
                   rel="noopener noreferrer"
                   target="_blank"
-                  href="mailto:tmitzel.fusion@gmail.com"
+                  href="mailto:Sabahdc@fusion-hp.com"
                 >
-                  tmitzel.fusion@gmail.com
+                  Sabahdc@fusion-hp.com
                 </a>
               </div>
             </div>
